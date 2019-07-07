@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+	<link rel="stylesheet" href="assets/css/mycss.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
+	<title>J's Music Studio</title>
+	<link rel="shortcut icon" href="assets/imgs/icons8_Headset_96px.png" type="image/png">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#scrolltop').click(function(){
+				$('html, body').animate({
+					scrollTop: 0
+				}, 1200);
+			});
+
+			$(window).scroll(function(){
+				if($(window).scrollTop()>300){
+					$('#scrolltop').fadeIn('slow');
+				}else{
+					$('#scrolltop').fadeOut('slow');
+				}
+			})
+		});
+
+		function validate(){
+			var name = document.getElementById('name');
+			var email = document.getElementById('email');
+			var subject = document.getElementById('subject');
+			var message = document.getElementById('message');
+
+			var name_err = document.getElementById('name_err');
+			var email_err = document.getElementById('email_err');
+			var subj_err = document.getElementById('subj_err');
+			var message_err = document.getElementById('message_err');
+
+			if (email.value == ""){
+				name.style.border = "1px solid red";
+				name_err.textContent = "Name is required!";
+				email.style.border= "1px solid red";
+				email_err.textContent = "Email is required!";
+				subject.style.border= "1px solid red";
+				subj_err.textContent = "Subject is required!";
+				message.style.border= "1px solid red";
+				message_err.textContent = "Message is required!";
+				email.focus();
+				return false;
+			}
+			if (subject.value == ""){
+				subject.style.border= "1px solid red";
+				subj_errsub.textContent = "Email is required!";
+				subject.focus();
+				return false;
+			}
+			if (message.value == ""){
+				message.style.border= "1px solid red";
+				message_err.textContent = "Email is required!";
+				message.focus();
+				return false;
+			}
+			else{
+				alert('Sent Successfully'); 
+			}
+		}
+
+	//	function myMap(){
+	//		var mapOptions = {
+	//	    center: new google.maps.LatLng(14.116282, 120.962476),
+	//	    zoom: 10,
+	//	    mapTypeId: google.maps.MapTypeId.HYBRID
+	//	}
+	//	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	//	}
+	//	}
+
+ 	</script>
+<!--	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG5Wewly8_UpcOdoVTqbFQzXHHdXmif1A&callback=myMap"></script>-->
+</head>
+<body>
+	
+<!-- Menu desktop -->
+<nav uk-sticky="bottom: #offset" id="menu" class="uk-navbar uk-navbar-container uk-box-shadow-medium uk-visible@l">
+    <div id="navigationpc" class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="150px" height="80px" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 300 150" style="enable-background:new 0 0 300 150;" xml:space="preserve">
+			<style type="text/css">
+			.st0{fill:#4D4D4D;}
+			.st1{font-family:'CenturyGothic';}
+			.st2{font-size:36px;}
+			.st3{fill:none;}
+			</style>
+			<text transform="matrix(1 0 0 1 116.3322 66.3337)"><tspan x="0" y="0" class="st0 st1 st2">J’s Music </tspan><tspan x="27.9" y="43.2" class="st0 st1 st2">Studio</tspan></text>
+			<rect x="193.7" y="113" class="st3" width="8" height="1"/>
+			<rect x="247.7" y="103.7" class="st3" width="6" height="1.3"/>
+			<image style="overflow:visible;" width="64" height="64" xlink:href="data:image/png;base64,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" transform="matrix(1.5833 0 0 1.5833 15.3333 29)">
+			</image>
+			</svg>
+		</a>
+        <ul class="uk-navbar-nav">
+            <li><a href="index.html">Home</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li class="uk-active"><a href="contact.html">Contact</a></li>
+			<li><a href="about.html">About Us</a></li>
+        </ul>
+    </div>
+	<div class="uk-navbar-right">
+		<ul id="socialicons" class="uk-navbar-nav">
+			<a id="facebook" target="_blank" href="http://www.facebook.com/jericho.gane" uk-icon="icon: facebook"></a>
+			<a id="ig" target="_blank" href="http://www.instagram.com/jerikong" uk-icon="icon: instagram"></a>
+			<a id="yt" target="_blank" href="https://www.youtube.com/channel/UCGBBG0FEZaC7UGa-5q-5jCQ?view_as=subscriber" uk-icon="icon: youtube"></a>
+		</ul>
+	</div>
+</nav>
+
+<!-- Mobile -->
+<nav class="uk-navbar uk-navbar-container uk-navbar-uk-box-shadow-medium uk-hidden@m" id="menu" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-toggle" href="#" uk-toggle="target: #menu-mobile">
+            <span uk-navbar-toggle-icon></span><span class="uk-margin-small-left">Menu</span>
+        </a>
+    </div>
+    <div class="uk-navbar-center">
+        <a href="" class="uk-navbar-item uk-logo">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="150px" height="80px" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 300 150" style="enable-background:new 0 0 300 150;" xml:space="preserve">
+			<style type="text/css">
+			.st0{fill:#4D4D4D;}
+			.st1{font-family:'CenturyGothic';}
+			.st2{font-size:36px;}
+			.st3{fill:none;}
+			</style>
+			<text transform="matrix(1 0 0 1 116.3322 66.3337)"><tspan x="0" y="0" class="st0 st1 st2">J’s Music </tspan><tspan x="27.9" y="43.2" class="st0 st1 st2">Studio</tspan></text>
+			<rect x="193.7" y="113" class="st3" width="8" height="1"/>
+			<rect x="247.7" y="103.7" class="st3" width="6" height="1.3"/>
+			<image style="overflow:visible;" width="64" height="64" xlink:href="data:image/png;base64,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" transform="matrix(1.5833 0 0 1.5833 15.3333 29)">
+			</image>
+			</svg>
+		</a>
+    </div>
+</nav>
+<div class="uk-offcanvas-content">
+    <div id="menu-mobile" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul id="sizee" class="uk-nav uk-nav-default">
+                <li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+	
+<div id="contactback" class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -300">
+    <h1 id="stdservices" class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">Contact Us</h1>
+</div>
+
+	<hr class="uk-divider-icon">
+	<button id="scrolltop" class="back-to-top" href="#back-to-top" uk-icon="icon: chevron-up; ratio: 2 "></button>
+
+	<div class="uk-container">
+	<form id="formfield" name="formfield" class="uk-column-1-2@s myForm">
+    	<fieldset class="uk-fieldset">
+			<legend class="uk-legend">Inquire Us</legend>
+			<div class="uk-margin">
+				<input class="uk-input" type="text" id="name" name="name" placeholder="Name">
+				<div id="name_err"></div>
+			</div>
+			<div class="uk-margin">
+				<input class="uk-input" type="text" id="email" name="email" placeholder="Email">
+				<div id="email_err"></div>
+			</div>
+			<div class="uk-margin">
+				<input class="uk-input" type="text" id="subject" name="subject" placeholder="Subject">
+				<div id="subj_err"></div>
+			</div>
+			<div class="uk-margin">
+				<textarea class="uk-textarea" rows="6" id="message" name="message" placeholder="Message"></textarea>
+				<div id="message_err"></div>
+			</div>
+			<button type="button" onclick="return validate()" class="uk-button uk-button-Primary" href="#">Submit</button>
+    	</fieldset>
+	</form>
+	</div>
+
+	<hr class="uk-divider-icon">
+		<div class="uk-container">
+			<div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+			    <div>
+
+			    </div>
+			    <div id="info">
+			    	<h3>Drop us a line</h3>
+			    	<ul>
+			    		<li>Address: Tagaytay City</li>
+			    		<li>Email: <a href="jerichogane30@gmail.com">jerichogane30@gmail.com</a></li>
+			    		<li>Facebook: <a href="facebook.com">j'smusic</a></li>
+			    		<li>Instagram: <a href="instagram.com">j'smusic</a></li>
+			    	</ul>
+			    </div>
+			    <div>
+			    	
+			    </div>
+			</div>
+		</div>
+
+	<hr class="uk-divider-icon">
+
+	<div class="uk-container">
+		<h2 style="text-align: center;">Our Location</h2>
+	</div>
+	<br>
+
+	<div class="map">
+		<iframe class="respmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5472.027638214534!2d120.96110767433524!3d14.117984562556238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd79dffa78234b%3A0x32e6c68b28150612!2sUnnamed+Road%2C+Tagaytay%2C+Cavite!5e0!3m2!1sen!2sph!4v1525159053310" width="1280" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+
+<footer class="uk-section uk-section-secondary">
+    <div class="uk-container">
+        <div class="uk-child-width-1-2@s uk-grid-small" uk-grid>
+    <div>
+        <div>
+            <div class="uk-text-center">
+                <p><a href="index.html">Home</a> | <a href="services.html">Services</a> | <a href="contact.html">Contact</a> | <a href="about.html">About us</a> | <a href="#">Terms & Condition</a></p>
+                <p class="uk-text-muted">Copyright 2018 | J's Music Studio JMS All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div class="uk-text-center">
+                <h4>Visit Us On:</h4>
+                <a id="facebook" target="_blank" href="http://www.facebook.com/jericho.gane" uk-icon="icon: facebook"></a>
+                <a id="ig" target="_blank" href="http://www.instagram.com/jerikong" uk-icon="icon: instagram"></a>
+                <a id="yt" target="_blank" href="https://www.youtube.com/channel/UCGBBG0FEZaC7UGa-5q-5jCQ?view_as=subscriber" uk-icon="icon: youtube"></a>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</footer>
+</body>
+</html>

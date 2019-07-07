@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: white;
+	font-family: 'Roboto', sans-serif;
+	margin: none;
+}
+#navigationpc{
+	margin-left: 80px;
+}
+
+#socialicons{
+	margin-right: 80px;
+}
+
+#facebook{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#ig{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#yt{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#footericons{
+	margin-right: 30px;
+}
+
+#morebtn{
+	padding: 0px 10px 0px 10px;
+}
+#morebtn:hover{
+	background-color: gray;
+}x
+.content1{
+	width: 600px;
+	height: 380px;
+}
+
+#fstcontent{
+	padding-bottom: 135px;
+}
+
+.words1{
+	margin-top: 60px;
+}
+
+.content2{
+	background-size: cover;
+}
+#content3{
+	margin-left: 80px;
+	margin-right: 80px;
+}
+#footertext{
+	text-align: center;
+}
+#sermain{
+	width: 100%;
+}
+#parallaxserv{
+	background-image: url(../imgs/servicesmain.jpg);
+	height: 650px;
+	background-attachment: fixed;
+}
+#stdservices{
+	background-color: rgba(0,0,0, 0.8);
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#contents{
+	text-align: center;
+}
+
+.back-to-top{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: gray;
+	color: white;
+}
+
+@media only screen and (max-width: 640px) {
+	#servicespics{
+		margin-left: none;
+		margin-right: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    #bottomtxt {font-size: 12px;}
+}
+
+#card1{
+	padding-bottom: 65px;
+}
+
+#card2{
+	padding-bottom: 87px;
+}
+
+#card3{
+	padding-bottom: 65px;
+}
+
+#formfield{
+	padding: 20px 20px 20px 20px;
+}
+#contactback{
+	background-image: url(../imgs/contact.jpg);
+	height: 650px;
+	background-attachment: fixed;
+}
+
+#info ul{
+	list-style-type: none;
+}
+
+#info a {
+	color: black;
+}
+
+.map {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.respmap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+#aboutback{
+	background-image: url(../imgs/aboutback.jpg);
+	height: 650px;
+	background-attachment: fixed;
+}
+
+#sizee a{
+	font-size: 20px;
+}
